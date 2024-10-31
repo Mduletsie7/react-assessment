@@ -1,0 +1,37 @@
+/* Banner.css */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 250px; /* Adjust height as needed */
+  background-color: black; /* Black background */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Padding around the content */
+}
+
+.banner h1 {
+  font-size: 2.5rem; /* Adjust font size */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.banner p {
+  font-size: 1.2rem; /* Adjust font size */
+  margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.learn-more {
+  padding: 10px 20px; /* Button padding */
+  font-size: 1rem; /* Button font size */
+  color: black; /* Text color */
+  background-color: rgb(225, 225, 225); /* Purple button background */
+  border: none; /* Remove border */
+  border-radius: 50px; /* Round button */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.learn-more:hover {
+  background-color: #4a72ca; /* Darker purple on hover */
+}

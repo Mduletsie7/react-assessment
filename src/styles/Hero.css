@@ -1,0 +1,43 @@
+/* Hero.css */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f0f0f0;
+    height: 400px; /* Set a fixed height */
+  }
+  
+  .hero-content {
+    max-width: 50%; /* Limit the width of the text content */
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem; /* Adjust font size */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .hero p {
+    font-size: 1.2rem; /* Adjust font size */
+    margin-bottom: 30px; /* Space below the paragraph */
+  }
+  
+  .cta-button {
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 1rem; /* Font size for the button */
+    color: white; /* Text color */
+    background-color: #007bff; /* Button color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: 420px; /* Maintain aspect ratio */
+  }
+  
