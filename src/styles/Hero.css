@@ -23,8 +23,8 @@
   }
   
   .cta-button {
-    padding: 10px 20px; /* Padding for the button */
-    font-size: 1rem; /* Font size for the button */
+    padding: 15px 30px; /* Padding for the button */
+    font-size: 1.2rem; /* Font size for the button */
     color: white; /* Text color */
     background-color: #007bff; /* Button color */
     border: none; /* Remove border */
