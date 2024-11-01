@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #282c34;
+    background-color: #000;
     color: white;
   }
   
@@ -13,29 +13,19 @@
     font-weight: bold;
   }
 
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 30px;
+    cursor: pointer;
+  }
 
-  .nav {
-    display: flex;
-  }
-  
-  .nav-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav-item {
-    margin-left: 20px; /* Space between items */
-  }
-  
-  .nav-item a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .nav-item a:hover {
-    color: #61dafb; /* Change color on hover */
-  }
+  /* Add underline effect on hover */
+nav ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px; /* Adjust the spacing between text and underline */
+}
   

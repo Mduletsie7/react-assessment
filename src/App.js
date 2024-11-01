@@ -2,7 +2,9 @@ import './App.css';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Hero from './components/Hero';
-import TimelineList from './components/Main';
+import DailyCommunion from './components/DailyCommunion';
+import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <Header />
       <Banner />
       <Hero />
-      <TimelineList limit={10}/>
+      <DailyCommunion />
+      <About />
+      <Footer />
     </div>
   );
 }

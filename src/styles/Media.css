@@ -1,0 +1,57 @@
+/* NotableCredits.css */
+
+.media {
+  padding: 10px 50px; /* Adjust top and bottom padding as needed */
+  text-align: center;
+}
+
+.album-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to create multiple rows */
+  gap: 20px; /* Space between items */
+}
+
+.album-item {
+  flex: 0 1 calc(33.33% - 20px); /* Three items in a row with space */
+  max-width: calc(33.33% - 20px); /* Ensure items don't exceed this width */
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.album-item:hover {
+  transform: translateY(-5px);
+}
+
+.album-item.img {
+  width: 100%; /* Make images responsive */
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.communion-icon {
+  width: 100%; /* Make icons responsive */
+}
+
+.album-info {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Media query for screens smaller than 600px (adjust as needed) */
+@media (max-width: 600px) {
+  .notable-credits {
+    font-size: 14px;
+  }
+
+  .album-list {
+    flex-wrap: wrap; /* Enable wrapping */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  }
+
+  .album-item {
+    flex: 0 1 calc(100% - 20px); /* One item per row on small screens */
+    max-width: calc(100% - 20px); /* Ensure items don't exceed this width */
+  }
+}

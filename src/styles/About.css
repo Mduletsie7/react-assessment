@@ -1,0 +1,51 @@
+.about {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .about ul {
+    margin: 0;
+    padding: 0 0 1em 1em;
+    list-style-type: none; /* Change list style */
+    color: #555;
+  }
+  
+  .about li {
+    margin-bottom: 10px;
+    padding-left: 1em; /* Add padding to left */
+    position: relative; /* Allows for pseudo elements */
+  }
+  
+  .about li::before {
+    content: '✝️'; /* Custom bullet point */
+    position: absolute;
+    left: 0;
+    color: #007bff; /* Change bullet color */
+    font-size: 1.2em; /* Adjust bullet size */
+  }
+  
