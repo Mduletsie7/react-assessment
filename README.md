@@ -7,8 +7,12 @@ Built using ReactJS, Axios (AJAX), FontAwesome
 
 To start the application:
 
-1. Once cloned ensure you are within project directory
-2. Run npm install to download required modules and dependencies
+1. Once cloned navigate into project directory
+
+2. Once you've ensured you are inside the project directory run the following npm command to install required packages and dependencies
+
+### `npm install`
+
 3. Once the necessary modules and dependencies have finished downloading you can run:
 
 ### `npm start`
