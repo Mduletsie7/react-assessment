@@ -42,7 +42,6 @@
   }
   
   .about li::before {
-    content: '✝️'; /* Custom bullet point */
     position: absolute;
     left: 0;
     color: #007bff; /* Change bullet color */
