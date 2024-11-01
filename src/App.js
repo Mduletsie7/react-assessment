@@ -2,7 +2,10 @@ import './App.css';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Hero from './components/Hero';
+import Media from './components/Media';
+import DailyCommunion from './components/DailyCommunion';
 import TimelineList from './components/Main';
+import UpcomingEvents from './components/UpcomingEvents';
 
 function App() {
   return (
@@ -10,7 +13,9 @@ function App() {
       <Header />
       <Banner />
       <Hero />
-      <TimelineList limit={10}/>
+      <DailyCommunion />
+      {/* <UpcomingEvents limit={10}/> */}
+      {/* <Media limit={10}/> */}
     </div>
   );
 }
