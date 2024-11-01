@@ -1,3 +1,6 @@
+
+![Screenshot_1-11-2024_165651_localhost](https://github.com/user-attachments/assets/ab744edd-3713-4bee-b7b0-c19e492292ad)
+
 Father's Heart Digital Church Project by @mduletsie7
 
 Built using ReactJS, Axios (AJAX), FontAwesome 
