@@ -1,18 +1,18 @@
 // Header.js
 import React from 'react';
 import '../styles/Header.css'; // Import the CSS file for styling
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        Father's Heart Digital Church</div>
+        Fathers Heart | Digital Church</div>
       <nav className="nav">
         <ul className="nav-list">
-          <li className="nav-item"><a href="/">Home</a></li>
-          <li className="nav-item"><a href="/about">About</a></li>
-          <li className="nav-item"><a href="/services">Services</a></li>
-          <li className="nav-item"><a href="/contact">Contact</a></li>
+          <li><Link to="/" smooth={true} duration={500}>Home</Link></li>
+          <li><Link to="about" smooth={true} duration={500}>About</Link></li>
+          <li><Link to="/" smooth={true} duration={500}>Events</Link></li>
         </ul>
       </nav>
     </header>

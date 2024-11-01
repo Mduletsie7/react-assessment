@@ -4,34 +4,85 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 250px; /* Adjust height as needed */
-  background-color: black; /* Black background */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 20px; /* Padding around the content */
+  height: 300px; /* Increased height for a more spacious feel */
+  background-color: #3b4e80; /* Darker background for modern look */
+  color: #ecf0f1; /* Light text color for contrast */
+  text-align: center;
+  padding: 30px; /* More padding for better spacing */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .banner h1 {
-  font-size: 2.5rem; /* Adjust font size */
-  margin-bottom: 10px; /* Space below the heading */
+  font-size: 2.8rem; /* Slightly larger heading font size */
+  margin-bottom: 15px; /* Space below the heading */
+  font-family: 'Arial', sans-serif; /* Modern sans-serif font */
+  font-weight: 700; /* Bolder font weight */
 }
 
 .banner p {
-  font-size: 1.2rem; /* Adjust font size */
-  margin-bottom: 20px; /* Space below the paragraph */
+  font-size: 1.3rem; /* Slightly larger paragraph font size */
+  margin-bottom: 25px; /* Space below the paragraph */
+  font-family: 'Arial', sans-serif; /* Consistent font family */
 }
 
 .learn-more {
-  padding: 10px 20px; /* Button padding */
-  font-size: 1rem; /* Button font size */
-  color: black; /* Text color */
-  background-color: rgb(225, 225, 225); /* Purple button background */
+  padding: 12px 25px; /* Button padding for a larger clickable area */
+  font-size: 1.1rem; /* Slightly larger button font size */
+  color: #2c3e50; /* Dark text color for contrast */
+  background-color: #ecf0f1; /* Light background for button */
   border: none; /* Remove border */
   border-radius: 50px; /* Round button */
   cursor: pointer; /* Pointer cursor */
-  transition: background-color 0.3s; /* Smooth transition */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
 .learn-more:hover {
-  background-color: #4a72ca; /* Darker purple on hover */
+  background-color: #bdc3c7; /* Darker light color on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.popup-content {
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-image {
+  max-width: 80%; /* Set image width to 50% of the popup */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Close button styles */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 32px; /* Increase font size for a bigger button */
+  cursor: pointer;
+  color: white; /* Change color to white */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.close:hover {
+  color: rgba(255, 255, 255, 0.8); /* Slightly change color on hover */
 }

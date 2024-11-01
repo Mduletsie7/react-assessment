@@ -2,10 +2,9 @@ import './App.css';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Hero from './components/Hero';
-import Media from './components/Media';
 import DailyCommunion from './components/DailyCommunion';
-import TimelineList from './components/Main';
-import UpcomingEvents from './components/UpcomingEvents';
+import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,8 +13,8 @@ function App() {
       <Banner />
       <Hero />
       <DailyCommunion />
-      {/* <UpcomingEvents limit={10}/> */}
-      {/* <Media limit={10}/> */}
+      <About />
+      <Footer />
     </div>
   );
 }

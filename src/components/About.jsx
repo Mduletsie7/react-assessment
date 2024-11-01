@@ -1,6 +1,7 @@
 // About.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import '../styles/About.css'
 
 const About = () => {
     const [objects, setObjects] = useState([]);
@@ -26,18 +27,13 @@ if (loading) return <p>Loading. . .</p>;
 if (error) return <p>Error: {error}</p>
   
     return (
-        <div className="notable-credits">
-          <div className="album-list">
+        <div className="about">
             {objects.map((object) => (
-              <div key={object.id} className="album-item">
-                <img src={`${object.Icon}`} alt={`Icon for ${object.Title}`} />
-                <AudioPlayer audioSource={`${object.Audio}`} />
-                <div className="album-info">
-                  <strong>{object.Title}</strong> {object.CreateDate}
+              <div key={object.id} className="about-body">
+                      <div dangerouslySetInnerHTML={{ __html: object.About }} />
+                      <script>{object.JS}</script>
                 </div>
-              </div>
             ))}
-          </div>
         </div>
       );
     };
