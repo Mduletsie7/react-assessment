@@ -9,6 +9,8 @@ const DailyCommunion = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    const audioApi = "https://arthurfrost.qflo.co.za/"
+
     useEffect(() => {
         const fetchObjects = async () => {
             try {
@@ -37,7 +39,7 @@ if (error) return <p>Error: {error}</p>
             {objects.map((object) => (
               <div key={object.id} className="album-item">
                 <img className="communion-icon" src={`${object.Icon}`} alt={`Icon for ${object.Title}`} />
-                <AudioPlayer audioSource={`${object.Audio}`} />
+                <AudioPlayer audioSource={`${audioApi}${object.Audio}`} />
                 <div className="album-info">
                   <strong>{object.Title}</strong> {object.CreateDate}
                 </div>
